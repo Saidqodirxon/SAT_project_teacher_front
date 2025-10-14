@@ -96,7 +96,7 @@ const RegisterPage = () => {
             <h1 className="text-2xl font-bold text-gray-900 mb-2">
               Create Account
             </h1>
-            <p className="text-gray-600">Join the SATASHKENT community</p>
+            <p className="text-gray-600">Join the 4Prep community</p>
           </div>
 
           {/* Error Messages */}
