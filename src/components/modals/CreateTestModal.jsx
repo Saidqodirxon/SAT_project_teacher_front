@@ -25,7 +25,7 @@ const CreateTestModal = ({ onClose, onSuccess }) => {
           {
             question_text: '',
             passage_text: '',
-            image: '',
+            image: null,
             question_type: 'mcq',
             answer_format: 'integer',
             marks: 1,
