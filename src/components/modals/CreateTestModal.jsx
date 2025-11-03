@@ -148,6 +148,8 @@ const CreateTestModal = ({ onClose, onSuccess }) => {
       }))
     };
 
+    console.log(cleanedFormData);
+
     // 1️⃣ Create the test (only text JSON, no files)
     const response = await teacherAPI.createTest(cleanedFormData);
     console.log('✅ Test created:', response.data);
@@ -188,7 +190,7 @@ const CreateTestModal = ({ onClose, onSuccess }) => {
     await new Promise((resolve) => setTimeout(resolve, 500)); // small delay
     handdleClose();
 
-
+    
   } catch (error) {
     console.error('❌ Failed to create test:', error.response?.data || error.message);
     alert(`Failed to create test: ${error.message}`);
